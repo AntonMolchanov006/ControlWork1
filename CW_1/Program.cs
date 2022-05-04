@@ -5,13 +5,13 @@ string [] FillArray(string [] EmptyArray)
     string [] Array;
     int size = 0;
     string s = string.Empty;
-    Console.WriteLine("Enter Strings: ");
-    Array = new string [size];
-
+    Console.WriteLine("Enter Strings and to finish enter end: ");
+    Array = new string [size]; // инициализируем массив размерностью 0
+// запускаем цикл для записи строк в массив до тех пор пока пользователь не введет слово end
     while(s != "end")
     {
-        s = Convert.ToString(Console.ReadLine());
-        size++;
+        s = Convert.ToString(Console.ReadLine());    // вводим строку с консоли
+        size++; // на каждом круге цикла увеличиваем размер массива для записи нового элемента
         EmptyArray = new string [size];
         for (int i = 0; i < EmptyArray.Length - 1; i++)
         {
@@ -23,7 +23,7 @@ string [] FillArray(string [] EmptyArray)
     return Array;
 }
 
-void PrintArray(string [] arra)
+void PrintArray(string [] arra)   // создали метод для вывода массива на экран
 {
     for (int i = 0; i < arra.Length; i++)
     {
@@ -38,7 +38,7 @@ string [] SortArray(string [] arra)
     for (int i = 0; i < arra.Length; i++)
     {
         s = arra[i];
-        if(s.Length > 3)
+        if(s.Length > 3) // если длина строки больше 3 знаков "обнуляем" строку
         {
             arra[i] = string.Empty;
         }
