@@ -38,7 +38,7 @@ string [] SortArray(string [] arra)
     for (int i = 0; i < arra.Length; i++)
     {
         s = arra[i];
-        if(s.Length < 4)
+        if(s.Length > 3)
         {
             arra[i] = string.Empty;
         }
