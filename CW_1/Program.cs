@@ -47,34 +47,4 @@ string [] SortArray(string [] arra)
 }
 
 string [] ar = new string [0];
-//FillArray(ar);
-PrintArray(FillArray(ar));
 PrintArray(SortArray(FillArray(ar)));
-
-// string[] NewArray(string[] AS2)
-// {
-//     string[] Array; 
-//     int count; 
-//     string s;
-//     Console.WriteLine("Enter strings:");
-//     count = 0;
-//     Array = new string[count];
-//     do
-//     {
-//         s = Console.ReadLine();
-//         if (s != "")
-//         {
-//             count++;
-//             AS2 = new string[count];
-//             for (int i = 0; i < AS2.Length - 1; i++)
-//                 AS2[i] = Array[i];
-//             AS2[count - 1] = s;
-//             Array = AS2;
-//         }
-//     } while (s != "");
-//     for (int i = 0; i < Array.Length; i++)
-//         Console.Write(Array[i] + ", ");
-//     return Array;
-// }
-// string[] AS2 = new string[2];
-// NewArray(AS2);
